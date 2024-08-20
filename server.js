@@ -113,7 +113,7 @@ app.get('/api/user', authenticateJWT, async (req, res) => {
 
 // Additional API
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://frontend-f7ks.onrender.com/',
   credentials: true,
 }));
 
