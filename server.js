@@ -122,6 +122,11 @@ const australiaData = require('./aus.json');
 const usaData = require('./usa.json');
 const germanyData = require('./germany.json');
 
+app.get('/',(req,res) => {
+  res.send("welcome")
+})
+
+
 app.get('/api', (req, res) => {
   const { duration, ielts, scholarship, country, tuition, prog } = req.query;
 
